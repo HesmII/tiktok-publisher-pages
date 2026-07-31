@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Redirecting…</title>
+</head>
+<body>
+<p>Redirecting to local OAuth receiver…</p>
+<script>
+  // TikTok OAuth callback relay: forward code+state to the local receiver
+  var dest = "http://localhost:8080/callback" + window.location.search;
+  window.location.replace(dest);
+</script>
+</body>
+</html>
